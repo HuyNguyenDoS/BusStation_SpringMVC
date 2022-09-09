@@ -1,0 +1,1009 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 19, 2022, 2:29:26 PM
+    Author     : Nguyen
+*/
+:root{
+  --orange:#ffa500;
+  --blue: #2852EB;
+  --light-blue-form: #E8F1FF;
+  --black: #4F4F4F;
+  --light-black: #8D8D8D; 
+} 
+
+
+    /*********************************************************************************************
+  
+                                        HOME-BANNER-BACKGROUND    
+  
+    **********************************************************************************************/
+  
+    
+    /*
+  .banner img{
+    /* background-image: url(/img/banner-bg.png);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    background-position: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+*/
+
+.banner-container{
+    display: block;
+    padding-top: 70px;
+}
+.background{
+    transition: all 200ms ease 0s;
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+
+.background-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    inset: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+  .content div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner h3{
+    font-family: 'Nunito', serif;
+    font-style: italic;  
+    color: #fff;
+    letter-spacing: 0.45rem;
+    font-size: 65px;
+    text-align: center;
+    margin-top: 195px;
+  }
+  .banner p{
+    font-family: "Montserrat" ;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    margin-top: 27px;
+    font-size: 27px;
+    font-weight: 500;
+
+  }
+  .banner h3 p{
+    text-align: center;
+  }
+
+  .banner ul{
+    list-style:none;
+  }
+  .banner li{
+    display: block;
+  }
+  .banner a{
+    color:#ececec
+
+  }
+
+  
+
+  .banner .inline li{
+    display:inline-block
+
+  }
+
+  
+    /*------------------------------------
+  
+         SOCIAL-ICONS OF BANNER   
+  
+    ------------------------------------*/
+  .banner .social-icons-banner a
+  {
+    width:45px;
+    height:45px;
+    line-height:40px;
+    margin-left:11px;
+    border-radius:100%;
+    background:none;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .social-icons-banner
+{
+  
+  margin-top: 390px;
+  margin-left: 270px;
+  list-style:none;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.social-icons-banner li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons-banner li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons-banner a{
+  background-color:#eceeef;
+  color:#ffffff;
+  font-size:17px;
+  display:inline-block;
+  line-height:44px;
+
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons-banner a:active,.social-icons-banner a:focus,.social-icons-banner a:hover
+{
+  color:#fff;
+  background-color:#1d3fd4
+}
+.social-icons-banner.size-sm a
+{
+  line-height:34px;
+  height:28px;
+  width:28px;
+  font-size:14px
+}
+
+
+
+  
+    /*********************************************************************************************
+  
+                                        FORM ĐẶT VÉ - TÌM CHUYẾN XE    
+  
+    **********************************************************************************************/
+
+.contain-form{
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  position:relative;
+  z-index: 2;
+  
+}
+.row>* 
+{
+    width :45%;
+    max-width: 100%;
+}
+.contain-form .tabs-content h4 {
+margin-top: 0px;
+margin-bottom: 40px;
+font-size: 24px;
+color: #fff;
+font-weight: 700;
+}
+
+
+.contain-form .submit-form {
+
+  width: 1100px;
+  text-align: left;
+  background-color: var(--light-blue-form);
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 18px;
+}
+
+.submit-form .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.submit-form h4 {
+width: 100%;
+font-size: 16px;
+font-weight: 700;
+margin-top: 0px;
+margin-bottom: 20px;
+padding-bottom: 0px;
+display: inline-block;
+font-family: "Montserrat" sans-serif;
+font-weight: 700;
+}
+
+.submit-form h4 em {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.submit-form fieldset label {
+margin-top: 10px;
+float: left;
+width: max-content;
+font-size: 12px;
+/*text-transform: uppercase;*/
+color: #121212;
+}
+
+.radio-select label{
+font-size: 12px;
+color: #121212;
+width: max-content;
+float: left;
+
+}
+.radio-select input{
+    margin-top: 2px 
+}
+
+.submit-form select {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 150px;
+  height: 36px;
+  background-color: var(--light-blue-form);
+  border: 1px solid #dbdada;
+  border-radius: 50px;
+  font-size: 12px;
+  color:var(--black);
+  outline: none;
+  padding: 10px 10px;
+  display: inline-block;
+  box-shadow: none;
+  border-radius: 0px;
+}
+
+.submit-form .date {
+    margin-bottom: 10px;
+    height: 36px;
+    background-color: var(--light-blue-form);
+    border: 1px solid #dbdada;
+    border-radius: 50px;
+    font-size: 11px;
+    color: var(--black);
+    outline: none;
+    padding: 10px 10px;
+    display: inline-block;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+.submit-form .datetime input {
+    margin-top: 12px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.submit-form .radio-select {
+margin-left: 5px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+align-self: flex-start;
+justify-content: flex-end;
+}
+
+.submit-form .radio-select input{
+  margin-left: 15px;
+}
+
+.submit-form .radio-select #row-radio-btn{
+  margin-left: 7px;
+  display: flex;
+  flex-direction: row;
+}
+
+.submit-form button {
+width: 150px;
+height: 45px;
+margin-left: 20px;
+background-color: #2852EB;
+font-size: 13px;
+color: #fff;
+font-weight: 600;
+border-radius: 5px;
+}
+
+.submit-form form .row{
+display: flex;
+flex-wrap:nowrap;
+align-self: center;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+align-content: center;
+
+}
+
+form .row .place-from-to{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  border: 0.5px solid var(--light-black);
+  border-radius: 10px;
+}
+
+form .row .datetime{
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  border: 1.5px solid var(--light-black);
+  border-radius: 10px;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+fieldset {
+  display: flex;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: inherit;
+  padding-inline-start: 0em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-style: groove;
+  border-image: initial;
+  flex-wrap: initial;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+
+}
+/*
+form .row fieldset{
+  width: calc(95%);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+*/
+.submit-form .submit-btn{
+  display: flex;
+}
+
+
+
+
+    /*********************************************************************************************
+  
+                                        CARD ĐIỂM ĐẾN PHỔ BIẾN    
+  
+    **********************************************************************************************/
+
+
+
+.background-city{
+    transition: all 200ms ease 0s;
+    width: 100%;
+    height: calc(125vh - 40px);
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -180px;
+    flex-wrap: wrap
+}
+
+.title-text{
+    margin-top: 250px;
+}
+.title-text-h1{
+    font-size: 25px;
+    color: var(--blue);
+    font-weight: 700;
+    text-align: center;
+}
+
+.small-title{
+    font-size: 20px
+    
+}
+
+
+   /*--------------------
+      TOP DESTINATION    
+  ---------------------*/
+
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  /*place-items: center;*/
+}
+
+.page-content {
+  display: grid;
+  grid-gap: 2.5rem;
+  padding: 1rem;
+  max-width: 1024px;
+  font-family: var(--font-sans);
+  margin-top: 20px;
+  margin-right: 150px;
+
+}
+
+main.page-content
+{
+    margin-left: 150px;
+}
+
+
+
+
+
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 110%;
+  max-height: 300px;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  border: 0px;
+  border-radius: 20px;
+  flex-direction: column-reverse;
+      
+
+}
+@media (min-width: 600px) {
+  .card {
+    height: 350px;
+  }
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+  background-image: url(https://images.unsplash.com/photo-1605834970749-4b6c5484f3c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+}
+.card:nth-child(2):before {
+  background-image: url(https://images.unsplash.com/photo-1558101749-c4af81bec568?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+.card:nth-child(3):before {
+  background-image: url(https://images.unsplash.com/photo-1603852452378-a4e8d84324a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80);
+}
+.card:nth-child(4):before {
+  background-image: url(https://images.unsplash.com/photo-1535952548450-d7447587e733?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.70rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.btn:hover {
+  background-color: white;
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card:hover,
+.card:focus-within {
+    align-items: center;
+  }
+  .card:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card:hover:after,
+.card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card:hover .content,
+.card:focus-within .content {
+    transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+.card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card:focus-within:before, .card:focus-within:after,
+.card:focus-within .content,
+.card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
+
+
+
+    /*********************************************************************************************
+                                            
+                                            DỊCH VỤ XE KHÁCH
+                                            TUYẾN XE PHỔ BIẾN
+    
+    **********************************************************************************************/
+    
+.services{
+   padding: 2rem 9%;
+
+}
+    
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+    
+.heading span {
+    font-size: 2rem;
+    background: rgb(0 ,83, 255 , .12);
+    color: var(--blue);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    font-weight: 700;
+    font-family: "Montserrat" sans-serif;
+
+}
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.services .box-container .box {
+    flex: 1 1 20rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.services .box-container .box h3 {
+    color: #333;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+ 
+.services .box-container .box p {
+    color: #666;
+    padding: 1rem 0;
+}
+    
+.box-container .box .fa{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--blue);
+}    
+
+.services .box-container .box:hover{
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+    
+
+/* Tuyến xe */
+
+.packages .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.packages .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+    max-width: 350px;
+}
+
+.packages .box-container .box .img-fluid {
+    height: 14rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.packages .box-container .box .content-text-booking {
+    padding: 2rem;
+}
+
+.packages .box-container .box .content-text-booking h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    line-height: 25px
+}
+
+.packages .box-container .box .content-text-booking h3 i {
+    color: var(--blue);
+}
+
+.packages .box-container .box .content-text-booking p {
+    font-size: 17px;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.packages .box-container .box .content-text-booking .price {
+    font-size: 18px;
+    color: #333;
+}
+
+.btn-book {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--blue);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--blue);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.btn-book:hover{
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    background: var(--black);
+    padding: .8rem 3rem;
+    border: .2rem solid var(--black);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.packages{
+    padding: 2rem 9%;
+        margin-bottom: 100px;
+
+}
+
+
+.packages .box .label[data-v-7026b95e] {
+    color: #111;
+    margin: 8px 0 16px;
+    font-size: 15px;
+    font-weight: 500;
+    min-width: 200px;
+    height: 28px;
+    border-radius: 16px;
+    padding: 5px 12px;
+    display: inline-block;
+    background-color: rgba(99,114,128,.1);
+}
+
+.packages .box .label>.dot[data-v-7026b95e] {
+    display: inline-block;
+    width: 6px;
+    border-radius: 3px;
+    height: 6px;
+    opacity: .3;
+    margin: 3px 12px;
+    background-color: #000;
+}
+
+.packages .content-text-booking .fromto {
+    width: 28px;
+    height: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+
+
+    /*********************************************************************************************
+                                            
+                                            TUYẾN XE ĐẶT NHIỀU 
+    
+    **********************************************************************************************/
+    
+    
+/* Font */
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hot-routes{
+    background-color: whitesmoke;
+}
+
+
+.heading-route {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+    
+.heading-route span {
+    font-size: 2rem;
+    background: #0e73df;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    font-weight: 700;
+    font-family: "Montserrat" sans-serif;
+
+}
+
+
+.main-routes{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 110px;
+}
+
+
+#img-hot-routes {
+      height: 14rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}*/
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding-left: 80px;
+  padding-right: 80px;
+  justify-content: space-between;
+}
+
+.cards_item {
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+    max-width: 300px;
+/*    margin-left: 50px;*/
+    margin-top: 60px;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 28%;
+  }
+}
+
+/*.card_image {
+     max-width: 300px; 
+    height: 250px;
+}*/
+
+.card-route {
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+    background: linear-gradient(to top left, #f9b943, #ffca6e);
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+.details-container {
+    margin-top: 10px;
+}
+
+.distance-journeyTime {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.details{
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+em.fa {
+    margin-right: 5px;
+    font-size: 18px
+}
+
+span.item-price {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+svg.icon {
+    margin-left: -5px;
+}
+
+.details span {
+    font-size: 15px;
+}
+
+img.fromtowhite{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

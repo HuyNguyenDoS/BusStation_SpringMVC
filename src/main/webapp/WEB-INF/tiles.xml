@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+        Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    
+    <!--HOME PAGE-->
+
+
+    <definition name="baseLayout"
+                template = "/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+        <put-attribute name="content" value="BASE"/>
+    </definition>
+    
+    <definition name="index" extends ="baseLayout">
+        <put-attribute name ="title" value ="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp"/>
+    </definition>
+    
+    <definition name="home_routine" extends ="baseLayout">
+        <put-attribute name ="title" value ="Lịch trình" />
+        <put-attribute name="content" value="/WEB-INF/jsp/home_routine.jsp"/>
+    </definition>
+    
+    <definition name="home_schedule" extends ="baseLayout">
+        <put-attribute name ="title" value ="Đặt vé" />
+        <put-attribute name="content" value="/WEB-INF/jsp/home_schedule.jsp"/>
+    </definition>
+    
+    <definition name="list_schedules" extends ="baseLayout">
+        <put-attribute name ="title" value ="Đặt vé" />
+        <put-attribute name="content" value="/WEB-INF/jsp/list_schedules.jsp"/>
+    </definition>
+    
+    <definition name="cart" extends ="baseLayout">
+        <put-attribute name ="title" value ="Giỏ hàng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/cart.jsp"/>
+    </definition>
+    
+    <definition name="list_buses" extends ="baseLayout">
+        <put-attribute name ="title" value ="Danh sách chuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/list_buses.jsp"/>
+    </definition>
+        
+    <definition name="bus_detail" extends ="baseLayout">
+        <put-attribute name ="title" value ="Chi tiết chuyến xe" />
+        <put-attribute name="content" value="/WEB-INF/jsp/bus_detail.jsp"/>
+    </definition>
+    
+    
+    
+    <!--SIGN IN & SIGN UP-->
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="LOGIN" />
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="DANG KY" />
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="registerCarrierIndex" extends="baseLayout">
+        <put-attribute name="title" value="DANG KY" />
+        <put-attribute name="content" value="/WEB-INF/jsp/registerCarrierIndex.jsp" />
+    </definition>
+    
+    <definition name="registerStaff" extends="baseLayout">
+        <put-attribute name="title" value="Register staff" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/registerStaff.jsp" />
+        <put-attribute name="header" value="" />
+        <put-attribute name="footer" value="" />
+    </definition>
+    
+    
+    <!--ADMIN PAGE-->
+    
+    <definition name="adminBaseLayout"
+                template = "/WEB-INF/layout/admin_base.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="admin_header" value="/WEB-INF/layout/admin_header.jsp"/>
+        <put-attribute name="admin_sidebar" value="/WEB-INF/layout/admin_sidebar.jsp"/>
+        <put-attribute name="admin_content" value="Base"/>
+        <put-attribute name="admin_footer" value="/WEB-INF/layout/admin_footer.jsp"/>
+
+    </definition>
+    <definition name="admin-index" extends="adminBaseLayout">
+        <put-attribute name="title" value="admin" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/admin.jsp" />
+    </definition>
+    <definition name="category-statistic" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Thống kê theo danh mục" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/category-statistic.jsp"/>
+    </definition>
+
+    <definition name="revenue-stats" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Thống kê doanh thu theo ngày" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/revenue-stats.jsp"/>
+    </definition>
+    <definition name="revenue-stats-month" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Thống kê doanh thu theo tháng" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/revenue-stats-month.jsp"/>
+    </definition>
+    <definition name="revenue-stats-period" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Thống kê doanh thu theo quý" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/revenue-stats-period.jsp"/>
+    </definition>
+    
+    <!--THÊM DỮ LIỆU-->
+            
+    <definition name="bus" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Tạo chuyến xe" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/form_bus.jsp"/>
+    </definition>
+    <definition name="route" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Tạo tuyến xe" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/form_route.jsp"/>
+    </definition>
+    <definition name="schedule" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Tạo lịch trình" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/form_schedule.jsp"/>
+    </definition>
+            
+            
+    <!--SỬA DỮ LIỆU-->
+            
+    <!--Chuyến xe -->
+    <definition name="data_bus" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Bảng dữ liệu chuyến xe" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/data_bus.jsp"/>
+    </definition>
+    <definition name="update_bus" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Cập nhật chuyến xe" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/form_update_bus.jsp"/>
+    </definition>
+    
+    
+    <!--Tuyến xe-->
+    <definition name="data_route" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Bảng dữ liệu tuyến xe" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/data_route.jsp"/>
+    </definition>
+    <definition name="update_route" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Cập nhật tuyến xe" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/form_update_route.jsp"/>
+    </definition>
+    
+    <!--Lịch chạy-->
+    <definition name="data_schedule" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Bảng dữ liệu lịch chạy" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/data_schedule.jsp"/>
+    </definition>
+    <definition name="update_schedule" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Cập nhật lịch chạy" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/form_update_schedule.jsp"/>
+    </definition>        
+                
+    <!--Thông tin đặt vé-->
+    <definition name="data_booking" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Bảng dữ liệu thông tin đặt vé" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/data_booking.jsp"/>
+    </definition>            
+
+    <definition name="data_booking_detail" extends ="adminBaseLayout">
+        <put-attribute name ="title" value ="Chi tiết vé" />
+        <put-attribute name="admin_content" value="/WEB-INF/jsp/admin/data_booking_detail.jsp"/>
+    </definition>
+    
+    <!--          ADMIN PAGE             -->
+    
+    <!--CARRIER PAGE-->
+       
+    <definition name="carrierBaseLayout"
+                template = "/WEB-INF/layout/carrier_base.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="carrier_header" value="/WEB-INF/layout/carrier_header.jsp"/>
+        <put-attribute name="carrier_sidebar" value="/WEB-INF/layout/carrier_sidebar.jsp"/>
+        <put-attribute name="carrier_content" value="Base"/>
+        <put-attribute name="carrier_footer" value="/WEB-INF/layout/carrier_footer.jsp"/>
+
+    </definition>
+    <definition name="carrier-index" extends="carrierBaseLayout">
+        <put-attribute name="title" value="carrier" />
+        <put-attribute name="carrier_content" value="/WEB-INF/jsp/carrier/carrier.jsp" />
+    </definition>
+    <!--Chuyến xe -->
+    <definition name="busCarrier" extends ="carrierBaseLayout">
+        <put-attribute name ="title" value ="Tạo chuyến xe" />
+        <put-attribute name="carrier_content" value="/WEB-INF/jsp/carrier/form_bus.jsp"/>
+    </definition>
+
+    <definition name="data_busCarrier" extends ="carrierBaseLayout">
+        <put-attribute name ="title" value ="Bảng dữ liệu chuyến xe" />
+        <put-attribute name="carrier_content" value="/WEB-INF/jsp/carrier/data_bus.jsp"/>
+    </definition>
+    <definition name="update_busCarrier" extends ="carrierBaseLayout">
+        <put-attribute name ="title" value ="Cập nhật chuyến xe" />
+        <put-attribute name="carrier_content" value="/WEB-INF/jsp/carrier/form_update_bus.jsp"/>
+    </definition>
+    <!--          CARRIER PAGE             -->
+</tiles-definitions>
